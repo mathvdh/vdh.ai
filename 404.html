@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>404 · vdh.ai</title>
+  <meta name="robots" content="noindex">
+  <meta name="color-scheme" content="dark">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <script>
+    // Old Squarespace URLs → their new homes on the one-page site.
+    (function () {
+      var p = location.pathname.replace(/\/+$/, '').toLowerCase();
+      var map = {
+        '/companies': '/#log', '/companies/digicracy': '/#log/digicracy', '/companies/dcy': '/#log/dcy',
+        '/companies/vdh-ltd': '/#log/vdh-ltd', '/companies/b40lux': '/#log/b40lux',
+        '/posts': '/#notes', '/blog': '/#notes', '/posts/my-first-marathon': '/#notes/my-first-marathon',
+        '/posts/never-give-up': '/#notes/never-quit', '/posts/be-grateful': '/#notes/be-grateful',
+        '/posts/boredom': '/#notes/boredom', '/posts/comfortcrisis': '/#notes/the-comfort-crisis',
+        '/posts/morning-run': '/#notes', '/contact': '/#ping', '/about': '/#readme', '/welcome': '/'
+      };
+      if (map[p]) location.replace(map[p]);
+    })();
+  </script>
+  <style>
+    @font-face { font-family: "JetBrains Mono"; src: url("/assets/fonts/jetbrains-mono.woff2") format("woff2"); font-weight: 100 800; font-display: swap; }
+    :root { --bg: #08080a; --fg: #ecebe6; --dim: #8b8b94; --accent: #c6ff3d; --del: #ff6b6b; }
+    html, body { height: 100%; }
+    body { margin: 0; display: grid; place-items: center; background: var(--bg); color: var(--fg); font: 15px/1.7 "JetBrains Mono", ui-monospace, Menlo, monospace; padding: 16px; }
+    pre { margin: 0; white-space: pre-wrap; overflow-wrap: anywhere; max-width: 680px; }
+    .big { font-size: clamp(64px, 18vw, 180px); font-weight: 800; letter-spacing: -.06em; line-height: 1; color: var(--accent); }
+    .err { color: var(--del); }
+    .dim { color: var(--dim); }
+    a { color: var(--accent); }
+  </style>
+</head>
+<body>
+  <main>
+    <p class="big" aria-hidden="true">404</p>
+<pre><span class="dim">guest@vdh.ai:~$</span> cd <span id="path">this-page</span>
+<span class="err">fatal: pathspec did not match any files known to git.</span>
+
+<span class="dim">hint:</span> it may have been deleted, moved, or never existed.
+<span class="dim">hint:</span> <a href="/">git checkout main</a>  (go home)</pre>
+  </main>
+  <script>document.getElementById('path').textContent = location.pathname;</script>
+</body>
+</html>
